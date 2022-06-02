@@ -1,7 +1,5 @@
 package SinglyLinkedList;
 
-import java.util.List;
-
 public class SinglyLinkedList {
     private ListNode head;
 
@@ -19,10 +17,28 @@ public class SinglyLinkedList {
     public void display() {
         ListNode current = head;
         while(current != null){
-            System.out.print(current.data + " -->");
+            System.out.print(current.data + " --> ");
             current = current.next;
         }
         System.out.print("null");
+    }
+
+    public void Beginning(int value) {
+        ListNode newNode = new ListNode(value);
+        newNode.next = head;
+        head = newNode;
+    }
+
+    public void End(int value) {
+        ListNode newNode = new ListNode(value);
+        if(head == null){
+            head = newNode;
+        }
+        ListNode current = head;
+        while(current.next != null){
+            current = current.next;
+        }
+        current.next = newNode;
     }
 
     public static void main(String[] args) {
@@ -37,6 +53,10 @@ public class SinglyLinkedList {
         second.next = third;
         third.next = fourth;
 
+        //sll.display();
+
+        //sll.Beginning(8);
+        sll.End(18);
         sll.display();
     }
 }
