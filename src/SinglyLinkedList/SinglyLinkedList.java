@@ -1,9 +1,5 @@
 package SinglyLinkedList;
 
-import com.sun.xml.internal.bind.v2.runtime.output.StAXExStreamWriterOutput;
-
-import java.util.List;
-
 public class SinglyLinkedList {
     private ListNode head;
 
@@ -19,7 +15,7 @@ public class SinglyLinkedList {
 
 
     //Display the LinkedList
-    public void display() {
+    public void display(ListNode head) {
         ListNode current = head;
         while(current != null){
             System.out.print(current.data + " --> ");
@@ -81,8 +77,25 @@ public class SinglyLinkedList {
         return false;
     }
 
+    //reverse the singly linked list
+    public ListNode Reverse(ListNode head) {
+        if (head == null){
+            return head;
+        }
+        ListNode current = head;
+        ListNode previous = null;
+        ListNode next = null;
+        while(current != null){
+            next = current.next;
+            current.next = previous;
+            previous = current;
+            current = next;
+        }
+        return previous;
+    }
+
     public static void main(String[] args) {
-        SinglyLinkedList sll = new SinglyLinkedList();
+
 
         ListNode head = new ListNode(10);
         ListNode second = new ListNode(12);
@@ -93,19 +106,22 @@ public class SinglyLinkedList {
         second.next = third;
         third.next = fourth;
 
-        //sll.display();
+        SinglyLinkedList sll = new SinglyLinkedList();
+        sll.display(head);
 
         //sll.Beginning(8);
         //sll.End(18);
         //sll.Insert(22,3);
         //sll.display();
 
-        if(sll.Search(head, 8)){
-            System.out.println("Search key Found");
-        }else {
-            System.out.println("Search ket not Found");
-        }
+//        if(sll.Search(head, 8)){
+//            System.out.println("Search key Found");
+//        }else {
+//            System.out.println("Search ket not Found");
+//        }
 
+        ListNode reverseListHead = sll.Reverse(head);
+        sll.display(reverseListHead);
 
     }
 }
