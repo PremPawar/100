@@ -112,10 +112,29 @@ public class SinglyLinkedList {
         return slowPointer;
     }
 
-
+    //find the nth node from the end of the linked list
+    public ListNode findNthFromEnd(int n) {
+        if (head == null) {
+            return null;
+        }
+        ListNode mainPtr = head;
+        ListNode refPtr = head;
+        int count = 0;
+        while(count < n){
+            if (refPtr == null){
+                throw new IllegalArgumentException(n + " is greater than total number of nodes in list");
+            }
+            refPtr = refPtr.next;
+            count++;
+        }
+        while (refPtr != null){
+            refPtr = refPtr.next;
+            mainPtr = mainPtr.next;
+        }
+        return mainPtr;
+    }
 
     public static void main(String[] args) {
-
 
 //        ListNode head = new ListNode(10);
 //        ListNode second = new ListNode(12);
@@ -149,9 +168,11 @@ public class SinglyLinkedList {
 //        ListNode reverseListHead = sll.Reverse(head);
 //        sll.display(reverseListHead);
 
-        ListNode middleNode = sll.findMiddle();
-        System.out.println("middle node is -> " + middleNode.data);
+//        ListNode middleNode = sll.findMiddle();
+//        System.out.println("middle node is -> " + middleNode.data);
 
+        ListNode nthNode = sll.findNthFromEnd(3);
+        System.out.println("Nth node from end id -> " + nthNode.data);
 
     }
 }
