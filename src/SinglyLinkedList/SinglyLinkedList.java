@@ -1,5 +1,7 @@
 package SinglyLinkedList;
 
+import java.util.List;
+
 public class SinglyLinkedList {
     private ListNode head;
 
@@ -15,13 +17,13 @@ public class SinglyLinkedList {
 
 
     //Display the LinkedList
-    public void display(ListNode head) {
+    public void display() {
         ListNode current = head;
         while(current != null){
             System.out.print(current.data + " --> ");
             current = current.next;
         }
-        System.out.print("null");
+        System.out.println("null");
     }
 
     //Add new node at the beginning of the linked list
@@ -94,20 +96,44 @@ public class SinglyLinkedList {
         return previous;
     }
 
+    //find middle node in singly linked list
+
+
+    public ListNode findMiddle() {
+        if (head == null){
+            return null;
+        }
+        ListNode slowPointer = head;
+        ListNode fastPointer = head;
+        while(fastPointer != null && fastPointer.next != null){
+            slowPointer = slowPointer.next;
+            fastPointer = fastPointer.next.next;
+        }
+        return slowPointer;
+    }
+
+
+
     public static void main(String[] args) {
 
 
-        ListNode head = new ListNode(10);
-        ListNode second = new ListNode(12);
-        ListNode third = new ListNode(14);
-        ListNode fourth = new ListNode(16);
-
-        head.next = second;
-        second.next = third;
-        third.next = fourth;
+//        ListNode head = new ListNode(10);
+//        ListNode second = new ListNode(12);
+//        ListNode third = new ListNode(14);
+//        ListNode fourth = new ListNode(16);
+//
+//        head.next = second;
+//        second.next = third;
+//        third.next = fourth;
 
         SinglyLinkedList sll = new SinglyLinkedList();
-        sll.display(head);
+
+        sll.Beginning(11);
+        sll.Beginning(1);
+        sll.Beginning(8);
+        sll.Beginning(10);
+
+        sll.display();
 
         //sll.Beginning(8);
         //sll.End(18);
@@ -120,8 +146,12 @@ public class SinglyLinkedList {
 //            System.out.println("Search ket not Found");
 //        }
 
-        ListNode reverseListHead = sll.Reverse(head);
-        sll.display(reverseListHead);
+//        ListNode reverseListHead = sll.Reverse(head);
+//        sll.display(reverseListHead);
+
+        ListNode middleNode = sll.findMiddle();
+        System.out.println("middle node is -> " + middleNode.data);
+
 
     }
 }
