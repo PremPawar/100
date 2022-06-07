@@ -134,6 +134,21 @@ public class SinglyLinkedList {
         return mainPtr;
     }
 
+
+    //Remove duplicates from sorted linked list
+    public void removeDuplicateFromSortedList () {
+        if (head == null) {
+            return;
+        }
+        ListNode current = head;
+        while (current != null && current.next != null) {
+            if (current.data == current.next.data) {
+                current.next = current.next.next;
+            }else {
+                current = current.next;
+            }
+        }
+    }
     public static void main(String[] args) {
 
 //        ListNode head = new ListNode(10);
@@ -148,9 +163,16 @@ public class SinglyLinkedList {
         SinglyLinkedList sll = new SinglyLinkedList();
 
         sll.Beginning(11);
-        sll.Beginning(1);
-        sll.Beginning(8);
         sll.Beginning(10);
+        sll.Beginning(8);
+        sll.Beginning(8);
+        sll.Beginning(6);
+        sll.Beginning(6);
+        sll.Beginning(6);
+        sll.Beginning(3);
+        sll.Beginning(1);
+
+
 
         sll.display();
 
@@ -171,8 +193,11 @@ public class SinglyLinkedList {
 //        ListNode middleNode = sll.findMiddle();
 //        System.out.println("middle node is -> " + middleNode.data);
 
-        ListNode nthNode = sll.findNthFromEnd(3);
-        System.out.println("Nth node from end id -> " + nthNode.data);
+//        ListNode nthNode = sll.findNthFromEnd(3);
+//        System.out.println("Nth node from end id -> " + nthNode.data);
+
+        sll.removeDuplicateFromSortedList();
+        sll.display();
 
     }
 }
