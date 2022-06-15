@@ -64,7 +64,9 @@ public class DeleteFirstNodeDLL {
         }
         head = head.next;
         temp.next = null;
+        length--;
         return temp;
+
     }
 
 
