@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0c50653f-a87d-4d11-bdf2-cecacbfb0653" name="Changes" comment="Find minimum value in array&#10;Find second maximum value in array">
-      <change afterPath="$PROJECT_DIR$/src/Array/moveAllZerosToEnd.java" afterDir="false" />
+    <list default="true" id="0c50653f-a87d-4d11-bdf2-cecacbfb0653" name="Changes" comment="move all zero to end of the array">
+      <change afterPath="$PROJECT_DIR$/src/Array/ResizeArray.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -38,7 +38,7 @@
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.moveAllZerosToEnd">
+  <component name="RunManager" selected="Application.ResizeArray">
     <configuration name="FindMinimumValueInArraay" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Array.FindMinimumValueInArraay" />
       <module name="Data_Structure" />
@@ -65,8 +65,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RemoveOddIntegerFromArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Array.RemoveOddIntegerFromArray" />
+    <configuration name="ResizeArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Array.ResizeArray" />
       <module name="Data_Structure" />
       <extension name="coverage">
         <pattern>
@@ -106,11 +106,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ResizeArray" />
         <item itemvalue="Application.moveAllZerosToEnd" />
         <item itemvalue="Application.FindSecondMaximumInArray" />
         <item itemvalue="Application.FindMinimumValueInArraay" />
         <item itemvalue="Application.ReverseOneDimentionalArray" />
-        <item itemvalue="Application.RemoveOddIntegerFromArray" />
       </list>
     </recent_temporary>
   </component>
@@ -291,7 +291,14 @@
       <option name="project" value="LOCAL" />
       <updated>1656214523707</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="move all zero to end of the array">
+      <created>1656570001269</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1656570001269</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -336,7 +343,8 @@
     <MESSAGE value="adding and updating element in one dimensional array" />
     <MESSAGE value="Print elements in array&#10;Remove Even integers form array&#10;Remove Odd integers form array&#10;Reverse the one dimensional array" />
     <MESSAGE value="Find minimum value in array&#10;Find second maximum value in array" />
-    <option name="LAST_COMMIT_MESSAGE" value="Find minimum value in array&#10;Find second maximum value in array" />
+    <MESSAGE value="move all zero to end of the array" />
+    <option name="LAST_COMMIT_MESSAGE" value="move all zero to end of the array" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Data_Structure$mergeSortedSLL.ic" NAME="mergeSortedSLL Coverage Results" MODIFIED="1654937626070" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
