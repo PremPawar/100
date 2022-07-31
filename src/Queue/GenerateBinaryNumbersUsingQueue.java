@@ -26,7 +26,7 @@ public class GenerateBinaryNumbersUsingQueue {
     public static void main(String[] args){
         GenerateBinaryNumbersUsingQueue binary = new GenerateBinaryNumbersUsingQueue();
 
-        System.out.println(Arrays.toString(binary.generateBinary(5)) );
+        System.out.println(Arrays.toString(binary.generateBinary(6)) );
 
     }
 }
