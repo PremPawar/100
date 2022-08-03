@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0c50653f-a87d-4d11-bdf2-cecacbfb0653" name="Changes" comment="Implement Binary tree">
-      <change afterPath="$PROJECT_DIR$/src/BinaryTree/PreOrderTraversal.java" afterDir="false" />
+    <list default="true" id="0c50653f-a87d-4d11-bdf2-cecacbfb0653" name="Changes" comment="PreOrder Traversal in Binary tree">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BinaryTree/PreOrderTraversal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BinaryTree/PreOrderTraversal.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -368,7 +368,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659326272202</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="PreOrder Traversal in Binary tree">
+      <created>1659418042050</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1659418042050</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -389,7 +396,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="# remove the loop from a singly linked list. &#10;&#10;#use floyd circle detection algo and then call the removeLoop method to remove the loop. &#10;previous node of starting node is need to be pointed to null value to break the loop." />
     <MESSAGE value="Merger two sorted singly Linked List into one linked list." />
     <MESSAGE value="Addition of values stored in nodes of two linked list" />
     <MESSAGE value="Generic code for Doubly Linked List" />
@@ -414,7 +420,8 @@
     <MESSAGE value="Implement Queue and insertion and deletion of element in queue using Enqueue and Dequeue" />
     <MESSAGE value="Generate the binary number from 1 to n using queue" />
     <MESSAGE value="Implement Binary tree" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implement Binary tree" />
+    <MESSAGE value="PreOrder Traversal in Binary tree" />
+    <option name="LAST_COMMIT_MESSAGE" value="PreOrder Traversal in Binary tree" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Data_Structure$mergeSortedSLL.ic" NAME="mergeSortedSLL Coverage Results" MODIFIED="1654937626070" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">

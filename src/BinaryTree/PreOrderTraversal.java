@@ -1,5 +1,9 @@
 package BinaryTree;
 
+import sun.reflect.generics.tree.Tree;
+
+import java.util.Stack;
+
 public class PreOrderTraversal {
     private TreeNode root;
 
@@ -26,6 +30,7 @@ public class PreOrderTraversal {
         second.left = fourth;
     }
 
+    //Recursive way of preOrder traversal
     public void preOrder(TreeNode root){
         if(root == null){
             return;
@@ -35,9 +40,31 @@ public class PreOrderTraversal {
         preOrder(root.right);
     }
 
+
+    //Iterative way of preOrder traversal
+    public void preOrder(){
+        if(root == null){
+            return;
+        }
+        Stack<TreeNode> stack = new Stack<>();
+        stack.push(root);
+
+        while(!stack.isEmpty()){
+            TreeNode temp = stack.pop();
+            System.out.print(temp.data + " ");
+            if(temp.right != null){
+                stack.push(temp.right);
+            }
+            if(temp.left != null){
+                stack.push(temp.left);
+            }
+        }
+    }
+
     public static void main(String[] args){
         PreOrderTraversal pt = new PreOrderTraversal();
         pt.createBinaryTree();
-        pt.preOrder(pt.root);
+//        pt.preOrder(pt.root);
+        pt.preOrder();
     }
 }
