@@ -64,7 +64,7 @@ public class PreOrderTraversal {
     public static void main(String[] args){
         PreOrderTraversal pt = new PreOrderTraversal();
         pt.createBinaryTree();
-//        pt.preOrder(pt.root);
+        pt.preOrder(pt.root);
         pt.preOrder();
     }
 }
